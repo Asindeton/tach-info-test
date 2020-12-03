@@ -1,0 +1,64 @@
+.wrapper {
+  max-width: 800px;
+  margin: 50px;
+  padding: 70px;
+  background: url("https://content.onliner.by/service_market/01f60b13/1260x840/f20802b27689b1af41c4bc930eb453e6.jpeg");
+}
+form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  height: 70px;
+  transform: skew(-60deg);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+input {
+  box-sizing: border-box;
+  max-width: 350px;
+  width: 70%;
+  height: 100%;
+  background-color: transparent;
+  font-size: 20px;
+  border: none;
+  padding: 5px;
+  margin-left: 60px;
+  display: block;
+  transform: skew(60deg);
+}
+
+button {
+  box-sizing: border-box;
+  width: 30%;
+  min-width: 120px;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  background-color: red;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+  border: 1px solid white;
+  span {
+    display: block;
+    transform: skew(60deg);
+  }
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    margin: 10px;
+    padding: 10px;
+  }
+  form {
+    transform: skew(0deg);
+  }
+  button {
+    span {
+      transform: skew(0deg);
+    }
+  }
+
+  input {
+    margin-left: 0px;
+    transform: skew(0deg);
+  }
+}
